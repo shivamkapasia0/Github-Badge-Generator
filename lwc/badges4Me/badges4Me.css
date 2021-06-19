@@ -1,0 +1,16 @@
+.slds-p-around_medium {
+	font-weight: 900;
+}
+.cardHeader{
+	margin-bottom: -29px;
+}
+.githubIconClass{
+	justify-content: flex-end;
+    /* align-items: center; */
+    display: flex;
+}
+.resultBadge{
+	align-content: center;
+    justify-content: center;
+    display: flex;
+}

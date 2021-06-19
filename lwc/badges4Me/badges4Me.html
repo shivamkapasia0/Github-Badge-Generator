@@ -1,0 +1,41 @@
+<template>
+	<lightning-card>
+		<div class="githubIconClass">
+			<a href="https://github.com/shivamkapasia0" target="_blank">
+				<img alt="Github" src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=Github&logoColor=white" />
+			</a>
+		</div>
+		<div class="slds-text-heading_small slds-p-left_medium slds-text-title_bold"> Github Badge Generator:</div>
+		<div class="slds-grid slds-gutters">
+			<div class="slds-col slds-p-around_medium">
+				<span>
+					<lightning-input class="slds-col slds-p-around_medium" type="text" onchange={handleLogoNameChange} placeholder="Github" label="Logo name "></lightning-input>
+				</span>
+			</div>
+			<div class="slds-col slds-p-around_medium">
+				<span>
+					<lightning-input class="slds-p-top_medium" type="color" name="input-color" label="Logo color" value="#FFFFFF" onchange={handleLogoColorChange}></lightning-input>
+				</span>
+			</div>
+			<div class="slds-col slds-p-around_medium">
+				<span>
+					<lightning-input class="slds-p-top_medium" type="color" name="input-color" label="Badge color" value="#000000" onchange={handleBadgeColorChange}></lightning-input>
+				</span>
+			</div>
+			<div class="slds-col slds-p-around_medium">
+				<span>
+					<lightning-input class="slds-col slds-p-around_medium" type="text" onchange={handleBadgeTextChange} placeholder="Github" label="Badge text"></lightning-input>
+				</span>
+			</div>
+			<div class="slds-col slds-p-around_medium">
+				<span>
+					<lightning-input class="slds-col slds-p-around_medium" type="text" onchange={handleLinkChange} placeholder="https://github.com/shivamkapasia0" label="Any link:"></lightning-input>
+				</span>
+			</div>
+		</div>
+		<div class="resultBadge">
+			<img src={imgSrc} alt="Italian Trulli">
+				<lightning-button-icon class="slds-p-left_medium" icon-name={copyToClipboardIconHandle} alternative-text="Copy text" title="Tap to copy" onclick={copyToClipboard}></lightning-button-icon>
+			</div>
+		</lightning-card>
+	</template>
