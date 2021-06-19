@@ -16,3 +16,5 @@ Just write select logo name and color and your badge will be instantly ready and
 
 ## Credits:
 Icons in the badge are provided through [Simple Icon](https://simpleicons.org/), if you don't find the desired logo, request it [here](https://github.com/simple-icons/simple-icons/issues/new?assignees=&labels=new+icon&template=icon_request.md)
+
+### Suggestions and feedback are welcome🙏
