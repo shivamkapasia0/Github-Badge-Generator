@@ -7,6 +7,24 @@ badgeText ;
 link ;
 imageUrl ;
 iconInCopyToClipboardBtn ;
+badgeStyle;
+leftColor;
+rightColor;
+
+get options() {
+    return [
+        { label: 'Plastic', value: 'plastic' },
+        { label: 'Social', value: 'social' },
+        { label: 'Flat', value: 'flat' },
+        { label: 'Flat-Square', value: 'flat-square' },
+        { label: 'For-the-Badge', value: 'for-the-badge' }
+    ];
+}
+
+handleChange(event) {
+    this.badgeStyle = event.detail.value;
+    console.log('thisbadge'+ this.badgeStyle);
+}
 
 connectedCallback() {
     this.iconInCopyToClipboardBtn = 'utility:copy_to_clipboard';
@@ -15,6 +33,9 @@ connectedCallback() {
     this.badgeColor = '100000';
     this.badgeText = 'github';
     this.link = 'https://github.com/shivamkapasia0';
+    this.badgeStyle = 'for-the-badge';
+    this.leftColor = 'black';
+    this.rightColor = 'black';
 }
 handleLogoNameChange(event){
     this.logoName= event.target.value;
@@ -34,13 +55,26 @@ handleBadgeColorChange(event){
     }
     console.log(this.badgeColor);
 }
+handleLeftColorChange(event){
+    this.leftColor = event.target.value;
+    if(this.leftColor.charAt(0) ==='#'){
+       this.leftColor =  this.leftColor.substring(1);
+    }
+}
+handleRightColorChange(event){
+    this.rightColor = event.target.value;
+    if(this.rightColor.charAt(0) ==='#'){
+       this.rightColor =  this.rightColor.substring(1);
+    }
+}
 
 handleBadgeTextChange(event){
     this.badgeText = event.target.value;
+    this.badgeText = this.badgeText.replace(" ", "_");
 }
-
+                                                                                         
 get imgSrc(){
-    let baseUrl = 'https://img.shields.io/badge/'+ this.badgeText +'-' + this.badgeColor + '?style=for-the-badge&logo=' + this.logoName + '&logoColor=' + this.logoColor;
+    let baseUrl = 'https://img.shields.io/badge/'+ this.badgeText +'-' + this.badgeColor +'?style='+ this.badgeStyle +'&logo='  + this.logoName + '&logoColor=' + this.logoColor + '&labelColor=' + this.leftColor +'&color=' + this.rightColor;
     this.imageUrl = baseUrl;
     return baseUrl;
 }
