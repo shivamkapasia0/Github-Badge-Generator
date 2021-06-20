@@ -17,14 +17,35 @@
 					<lightning-input class="slds-p-top_medium" type="color" name="input-color" label="Logo color" value="#FFFFFF" onchange={handleLogoColorChange}></lightning-input>
 				</span>
 			</div>
-			<div class="slds-col slds-p-around_medium">
+			<!-- <div class="slds-col slds-p-around_medium">
 				<span>
 					<lightning-input class="slds-p-top_medium" type="color" name="input-color" label="Badge color" value="#000000" onchange={handleBadgeColorChange}></lightning-input>
+				</span>
+			</div> -->
+			<div class="slds-col slds-p-around_medium">
+				<span>
+					<lightning-input class="slds-p-top_medium" type="color" name="input-color" label="Left color" value="#000000" onchange={handleLeftColorChange}></lightning-input>
+				</span>
+			</div>
+			<div class="slds-col slds-p-around_medium">
+				<span>
+					<lightning-input class="slds-p-top_medium" type="color" name="input-color" label="Right color" value="#000000" onchange={handleRightColorChange}></lightning-input>
 				</span>
 			</div>
 			<div class="slds-col slds-p-around_medium">
 				<span>
 					<lightning-input class="slds-col slds-p-around_medium" type="text" onchange={handleBadgeTextChange} placeholder="Github" label="Badge text"></lightning-input>
+				</span>
+			</div>
+			<div class="slds-col slds-p-top_x-large" style="font-weight: 900;">
+				<span>
+ <lightning-combobox name="filter"
+                            label="Badge style"
+                            value={badgeStyle}
+                            options={options}
+                            onchange={handleChange}
+                            placeholder="Select style"
+                            ></lightning-combobox>				
 				</span>
 			</div>
 			<div class="slds-col slds-p-around_medium">
@@ -33,9 +54,13 @@
 				</span>
 			</div>
 		</div>
+		 
+       
+   
 		<div class="resultBadge">
 			<img src={imgSrc} alt="Italian Trulli">
-				<lightning-button-icon class="slds-p-left_medium" icon-name={copyToClipboardIconHandle} alternative-text="Copy text" title="Tap to copy" onclick={copyToClipboard}></lightning-button-icon>
+				<lightning-button-icon class="slds-p-around_medium" icon-name={copyToClipboardIconHandle} alternative-text="Copy text" title="Tap to copy" onclick={copyToClipboard}></lightning-button-icon>
 			</div>
+            <p style="text-align: right; font-weight: 900;"> Icons By: <a href="https://simpleicons.org/" >Simple Icon</a></p>
 		</lightning-card>
 	</template>
