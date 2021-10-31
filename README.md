@@ -15,6 +15,6 @@ Just write select logo name and color and your badge will be instantly ready and
 ![enter image description here](https://github.com/shivamkapasia0/Badges4Me/blob/main/ss1.png?raw=true)
 
 ## Credits:
-Icons in the badge are provided through [Simple Icon](https://simpleicons.org/), if you don't find the desired logo, request it [here](https://github.com/simple-icons/simple-icons/issues/new?assignees=&labels=new+icon&template=icon_request.md)
+Icons in the badge are provided through [Simple Icon](https://simpleicons.org/), if you don't find the desired logo, request it [here](https://github.com/simple-icons/simple-icons/issues/new?assignees=&labels=new+icon&template=icon_request.md)  
 
-### Suggestions and feedback are welcome🙏
+### Suggestions and feedback are welcome.🙏
