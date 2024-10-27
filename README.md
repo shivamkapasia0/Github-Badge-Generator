@@ -4,8 +4,7 @@
 </p> 
 
 Generate badges for your Github repos fast and easily.
-**Go to** : [Github Repo Generator](https://kapasia-dev-ed.my.site.com/Badges4Me/s/) OR
-https://shivamkapasia0.github.io/Github-Badge-Generator/
+**Go to** : [Github Repo Generator](https://kapasia-dev-ed.my.site.com/Badges4Me/s/) 
 
 # Use
 Just write select logo name and color and your badge will be instantly ready and just copy the code by pressing the icon right to the badge and paste into your markdown.
